@@ -1,5 +1,5 @@
 @startuml
-title Correciones - Gestor de Base de Datos
+title Correciones -  Base de Datos
 
 class BaseDeDatos {
   
