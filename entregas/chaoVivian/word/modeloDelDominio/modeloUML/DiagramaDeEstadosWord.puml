@@ -1,0 +1,13 @@
+@startuml
+
+[*] --> Nuevo
+
+Nuevo --> Abierto : abrir
+Abierto --> Editando : iniciar edicion
+Editando --> Guardado : guardar
+Editando --> Cerrado : cerrar sin guardar
+Guardado --> Editando : modificar
+Guardado --> Cerrado : cerrar
+Cerrado --> [*]
+
+@enduml

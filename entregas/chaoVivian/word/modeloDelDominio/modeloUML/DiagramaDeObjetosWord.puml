@@ -1,0 +1,34 @@
+@startuml
+
+object word {
+  nombre = "Microsoft Word"
+  version = "365"
+  lenguaje = "Español"
+}
+
+object documentoInforme {
+  titulo = "Proyecto Final"
+  paginas = 12
+  estado = "Editando"
+}
+
+object editorPrincipal {
+  tipo = "Texto enriquecido"
+  soporteMultimedia = true
+}
+
+object barraInicio {
+  secciones = "Portada, Fuente, Párrafo, Estilos"
+}
+
+object menuArchivo {
+  opciones = "Nuevo, Abrir, Guardar, Imprimir"
+}
+
+word -- documentoInforme
+word -- editorPrincipal
+word -- barraInicio
+barraInicio -- menuArchivo
+documentoInforme -- editorPrincipal
+
+@enduml

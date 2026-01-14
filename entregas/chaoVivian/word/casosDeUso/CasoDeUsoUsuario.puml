@@ -1,0 +1,18 @@
+@startuml
+
+actor Usuario
+
+rectangle "Microsoft Word" {
+  
+  Usuario --> (Crear documento)
+  Usuario --> (Abrir documento)
+  Usuario --> (Editar documento)
+  Usuario --> (Formatear texto)
+  Usuario --> (Insertar elementos)
+  Usuario --> (Revisar documento)
+  Usuario --> (Guardar documento)
+  Usuario --> (Cerrar documento)
+  Usuario --> (Imprimir documento)
+}
+
+@enduml

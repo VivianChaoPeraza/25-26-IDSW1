@@ -1,0 +1,31 @@
+@startuml
+
+class Word
+class Documento
+class Editor
+class BarraDeHerramientas
+class Menu
+class Archivo
+class Edicion
+class Formato
+class Revisar
+class Vista
+class Complemento
+
+Word -- Documento : gestiona
+Word -- Editor : utiliza
+Word -- BarraDeHerramientas : contiene
+Word -- Complemento : soporta
+
+BarraDeHerramientas -- Menu : contiene
+Menu -- Archivo : contiene
+Menu -- Edicion : contiene
+Menu -- Formato : contiene
+Menu -- Revisar : contiene
+Menu -- Vista : contiene
+
+Documento -- Formato : aplica
+Documento -- Revisar : aplica
+Documento -- Vista : muestra
+
+@enduml
